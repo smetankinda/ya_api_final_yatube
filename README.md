@@ -67,10 +67,10 @@ python3 manage.py runserver
 Примеры запросов:
 
 Пример запроса на создание нового пользователя:
-Запрос: POST http://127.0.0.1:8000/api/v1/users/
+Запрос: POST http://ip:port/api/v1/users/
 {
     "username": "newuser",
-    "password": "Password1"
+    "password": "Newpassword123"
 }
 Ответ:
 {
@@ -80,10 +80,10 @@ python3 manage.py runserver
 }
 
 Пример запроса токена зарегестрированного пользователя:
-Запрос POST http://127.0.0.1:8000/api/v1/jwt/create/
+Запрос POST http://ip:port/api/v1/jwt/create/
 {
     "username": "newuser",
-    "password": "Password1"
+    "password": "Newpassword123"
 }
 Ответ:
 {
